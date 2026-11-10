@@ -46,10 +46,4 @@ ollama pull nomic-embed-text
 python main.py index path/to/document.pdf          # add --force to re-index
 python main.py query                               # interactive; --retrieval-only, --top-k N
 python main.py graph                               # visualize the knowledge graph
-```
 
-## Limitations
-
-- Text PDFs only; scanned PDFs need OCR first.
-- Graph quality depends on the small local LLM's entity extraction.
-- Re-indexing a changed PDF rebuilds the graph from all remaining chunks, which is slow.
